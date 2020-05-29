@@ -55,6 +55,7 @@ nav li {
 nav a {
     display: block;
     font-family: Rye;
+    font-size: 1.2em;
     padding: 20px;
     border: none;
 }
@@ -280,7 +281,7 @@ td img {
         margin-bottom: .3em;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     nav ul {
         flex-direction: column;
     }
