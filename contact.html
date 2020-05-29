@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raptors of Berlin | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400|Ubuntu:300,400|Special+Elite|Rye|Oxanium:00,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Raptors</a></li>
+            <li class="currentpage"><a href="contact.html">Contact</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <div class="clearfix"></div>
+        </ul>
+    </nav>
+
+    <header class="header contact-header">
+        <h1>Get in touch</h1>
+        <p>If you are fascinated by raptors, let's get in touch. Just fill out the form below, and I'll message you once I have any new information on birds of prey in Berlin.</p>
+    </header>
+    
+    <main>
+        <form action="">
+
+            <section class="margin-bottom">
+                <label class="form-label" for="name">Your name</label>
+                <input id="name" type="text" name="name" required placeholder="Your Name">
+            </section>
+
+            <section class="margin-bottom">
+                <label class="form-label" for="email">Your email address</label>
+                <input id="email" type="email" name="email" required placeholder="your.email@email.com">
+            </section>
+
+            <section class="margin-bottom">
+                <span class="form-label">Are you from Berlin?</span>
+                <div class="radio-buttons">
+                    <input id="yesBerlin" type="radio" value="yesBerlin" name="fromBerlin">
+                    <label for="yes">Yes</label>
+                    <input id="notBerlin" type="radio" value="no" name="fromBerlin">
+                    <label for="notBerlin">No</label>
+                </div>
+            </section>
+
+            <section class="margin-bottom">
+                <label class="form-label" for="selectUpdates">What kind of updates would you like to receive?</label>
+                <select name="updates" id="selectUpdates">
+                    <option value="">--please select an option--</option>
+                    <option value="articles">Articles</option>
+                    <option value="multimedia">Multimedia</option>
+                    <option value="studies">Studies</option>
+                    <option value="trips">Birdwatching trips</option>
+                    <option value="all">All of it!</option>                    
+                </select>
+            </section>
+
+            <section>
+                <label class="form-label" for="comment">Would you like to share anything with me?</label>
+                <textarea id="comment" name="comment" cols="30" rows="10" placeholder="Your comments or thoughts"></textarea>
+            </section>
+
+            <section>
+                <div class="form-label"></div>
+                <input type="submit" value="Send">
+            </section>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>created by O.H.</p></div>
+    </footer>
+</body>
+</html>

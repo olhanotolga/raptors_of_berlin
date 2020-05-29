@@ -1,0 +1,309 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #151714;
+    color: #bbb09c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Rye;
+    color: #90c695;
+}
+h2, h3, h4, h5, h6 {
+    color: #90c695;
+}
+h1 {
+    color: #151714;
+}
+main {
+    width: 100%;
+    padding: 1em;
+}
+a:link, a:visited {
+    color: #bbb09c;
+    text-decoration: none;
+}
+a:hover {
+    color: #C3B34F;
+    border-bottom: 3px solid #C3B34F;
+}
+a:active {
+    color: #C3B34F;
+}
+
+/* NAVIGATION */
+
+nav {
+    margin: -0.5rem -1rem 0 -1rem;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #151714;
+}
+nav li {
+    width: 25%;
+}
+nav a {
+    display: block;
+    font-family: Rye;
+    padding: 20px;
+    border: none;
+}
+nav a:link, nav a:visited {
+    color: #90c695;
+    border: none;
+}
+nav a:hover, nav li.currentpage a {
+    color: #151714;
+    background-color: #90c695;
+}
+nav li.currentpage a {
+    pointer-events: none;
+}
+nav a:active {
+    box-shadow: inset 2px -2px 0px 2px #2e3529, inset -2px 2px 0px 2px #2e3529;
+}
+
+
+/* HEADER */
+
+.header {
+    min-height: 10rem;
+    padding: 2rem 1rem;
+    margin: 0 -1rem 2rem;
+    text-align: end;
+    color: white;
+    vertical-align: bottom;
+}
+.header>p {
+    max-width: 70%;
+    margin-right: 0;
+    margin-left: auto;
+    text-shadow: 1px 0 30px #2e3529, -31px 1px 10px #2e3529;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 2em;
+}
+footer > p {
+    font-family: Rye;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    color: #151714;
+    background-color: #90c695;
+    text-align: end;
+}
+
+
+
+/* INDEX */
+
+.index-header {
+    background-image: url(../img/vincent-van-zalinge-TtEqhAqy_GE-unsplash.jpg);
+    background-position-y: center;
+    background-size: cover;
+}
+.homepage > section {
+    display: flex;
+    margin-bottom: 2em;
+}
+.hp-sect-two img {
+    order: 1;
+}
+.homepage-descr {
+    padding: 1em;
+}
+.home-sect-img {
+    max-width: 500px;
+}
+
+/* RAPTORS OVERVIEW */ 
+
+.overview-header {
+    background-image: url(../img/hans-veth-JWFthd9-QJ0-unsplash.jpg);
+    background-position-y: center;
+    background-size: cover;
+}
+
+.raptors-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.raptor-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+.headshot {
+    flex: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.headshot, .raptor-section>div {
+    padding: 1em;
+}
+
+/* CONTACT */
+
+.contact-header {
+    background-image: url(../img/vincent-van-zalinge-54X6Ehe54xo-unsplash.jpg);
+    background-position-y: center;
+    background-size: cover;
+}
+form {
+    max-width: 80%;
+    margin: 4em auto;
+}
+form > section {
+    margin: 1rem auto;
+}
+form > section > * {
+    display: inline-block;
+    margin: auto;
+}
+input[type="text"], input[type="email"], input[type="submit"], select, textarea {
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    width: 20%;
+    background-color: #C3B34F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+input[type="submit"]:hover {
+    border: 2px solid #C3B34F;
+    background-color: #151714;
+    color: #C3B34F;
+}
+.form-label {
+    width: 40%;
+    margin-right: 1em;
+    text-align: right;
+    vertical-align: top;
+}
+
+/* RESOURCES */
+
+.resources-header {
+    background-image: url(../img/andy-chilton-yZLkK1XfyHg-unsplash.jpg);
+    background-position-y: center;
+    background-size: cover;
+}
+.resources-main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+table {
+    
+    display: block;
+    color: white;
+    margin-bottom: 2em;
+    align-self: center;
+}
+th {
+    font-family: Rye;
+    color: #C3B34F;
+    font-size: 1.5em;
+    padding: 1rem 2rem;
+}
+td {
+    padding: .5rem 1rem;
+}
+th, td {
+    border: 1px solid #90c695;
+    border-collapse: collapse;
+}
+td img {
+    width: 80px;
+}
+
+
+
+/* MEDIA-QUERIES */
+
+@media (max-width: 600px) {
+    form {
+        max-width: 90%;
+    }
+    .margin-bottom {
+        margin-bottom: 1.5em;
+    }
+    input[type="text"], input[type="email"], input[type="submit"], .radio-buttons, #selectUpdates, #comment {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .form-label {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: .3em;
+    }
+
+}
+@media (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+    footer > p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .raptor-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .headshot {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 800px) {
+    .raptor-section {
+        width: 50%;
+    }
+    .headshot {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (min-width: 1020px) {
+    .raptor-section {
+        width: 50%;
+    }
+    .headshot {
+        width: 200px;
+        height: 200px;
+    }
+    main.homepage {
+        width: 80%;
+        margin: auto;
+    }
+}
