@@ -9,10 +9,12 @@ As a nature nerd who happens to live in a wilderness-rich city of Berlin, my pro
 ## Technology and concepts
 
 **Languages:** HTML, CSS
+
 I did not use anything apart from these two as part of the course project.
 Yet I'm planning to test out some other technologies here in the future.
 
 **Concepts:** Responsiveness
+
 I found that **CSS Flexbox** was perfect for arranging the navigation bar and some of the page sections on the website. The layout could be easily modified and adjusted with **media queries**.
 
 ## The visual part
