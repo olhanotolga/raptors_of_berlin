@@ -187,11 +187,11 @@ input[type="text"], input[type="email"], input[type="submit"], select, textarea 
 input[type="submit"] {
     width: 20%;
     background-color: #C3B34F;
+    border: 2px solid #C3B34F;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
 input[type="submit"]:hover {
-    border: 2px solid #C3B34F;
     background-color: #151714;
     color: #C3B34F;
 }
